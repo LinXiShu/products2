@@ -1,14 +1,66 @@
+.dingwei {
+  z-index: 1000;
+  display: block;
+  position: fixed;
+  width: 40px;
+  height: 100%;
+  background: black;
+  right: 0; }
+  .dingwei > .cont2 {
+    width: 40px;
+    height: 580px;
+    color: #fff;
+    margin: 200px 0; }
+    .dingwei > .cont2 > .dw1 {
+      width: 40px;
+      height: 60px;
+      position: relative; }
+      .dingwei > .cont2 > .dw1 > .dw_dl_dc {
+        position: absolute;
+        width: 90px;
+        height: 40px;
+        background: #666;
+        left: -91px;
+        top: 10px;
+        font-size: 14px;
+        line-height: 40px;
+        text-align: center; }
+    .dingwei > .cont2 :hover {
+      background: #EF3C79; }
+    .dingwei > .cont2 > .dw2 {
+      width: 40px;
+      height: 190px;
+      border: 1px dashed #ccc;
+      border-left: none;
+      border-right: none; }
+      .dingwei > .cont2 > .dw2 a {
+        color: #fff; }
+        .dingwei > .cont2 > .dw2 a > .spans {
+          display: block;
+          width: 20px;
+          height: 120px;
+          margin-left: 12px;
+          padding-top: 30px; }
+    .dingwei > .cont2 > .dw3 {
+      width: 40px;
+      height: 50px; }
+      .dingwei > .cont2 > .dw3:hover {
+        background: black; }
+    .dingwei > .cont2 > .dw4 {
+      width: 40px;
+      height: 50px;
+      display: block;
+      font-size: 14px; }
+
 .inputs {
   width: 100%; }
   .inputs .cont {
     height: 102px; }
-    .inputs .cont > .inputs_l {
+    .inputs .cont > .inputs_l .logo {
+      background: url("../img/logo.png") no-repeat;
+      margin-top: 20px;
       width: 276px;
       height: 80px; }
-      .inputs .cont > .inputs_l .logo {
-        background: url("../img/logo.png") no-repeat;
-        margin-top: 20px;
-        text-indent: 100000px; }
     .inputs .cont > .inputs_c {
       width: 659px;
       height: 100px; }
@@ -76,7 +128,7 @@ nav {
       nav .cont .nav_l > .twoji {
         position: relative;
         width: 208px;
-        height: 442px;
+        height: 484px;
         top: 0px;
         z-index: 10000;
         font-size: 14px;
@@ -114,53 +166,325 @@ nav {
       color: red; }
 
 .lunbotu {
+  overflow: hidden;
   width: 100%; }
   .lunbotu .cont {
-    height: 452px;
-    background: #faf; }
+    height: 481px;
+    background: #faf;
+    width: 1600px;
+    overflow: hidden;
+    background: url("../img/big1.jpg") no-repeat; }
     .lunbotu .cont .lbt_r {
+      position: relative;
+      top: -501px;
+      left: -300px;
       width: 216px;
-      height: 453asdpx;
+      height: 484px;
       background: #fff; }
       .lunbotu .cont .lbt_r .lbt_r_t {
         height: 92px;
         display: block;
-        background: #fff;
-        background: url("../img/lbt_r.png") no-repeat; }
+        background: #fff; }
         .lunbotu .cont .lbt_r .lbt_r_t .lbt_r_t_t {
           width: 213px;
           height: 65px;
-          display: block; }
+          display: block;
+          background: url("../img/lbt_r.png") no-repeat; }
       .lunbotu .cont .lbt_r .lbt_r_b {
         height: 360px;
         display: block; }
-    .lunbotu .cont .lbt_c .lbt_c_t {
-      display: block;
-      width: 774px;
-      height: 300px;
-      background: #ffa; }
-    .lunbotu .cont .lbt_c .lbt_c_b {
-      display: block;
-      width: 774px;
-      height: 150px;
-      background: red; }
+    .lunbotu .cont .lbt_c {
+      position: relative;
+      top: -501px;
+      left: -300px; }
+      .lunbotu .cont .lbt_c .lbt_c_t {
+        display: block;
+        width: 774px;
+        height: 300px; }
+      .lunbotu .cont .lbt_c .lbt_c_b {
+        display: block; }
+        .lunbotu .cont .lbt_c .lbt_c_b .lbt_c_b_1 {
+          background: #EEEEEE url("../img/lbt1.jpg") no-repeat; }
+          .lunbotu .cont .lbt_c .lbt_c_b .lbt_c_b_1 > a {
+            width: 290px;
+            height: 181px; }
+        .lunbotu .cont .lbt_c .lbt_c_b .lbt_c_b_2 {
+          background: #EEEEEE url("../img/lbt2.jpg") no-repeat; }
+          .lunbotu .cont .lbt_c .lbt_c_b .lbt_c_b_2 > a {
+            width: 290px;
+            height: 181px; }
+        .lunbotu .cont .lbt_c .lbt_c_b .lbt_c_b_3 {
+          background: #EEEEEE url("../img/lbt3.jpg") no-repeat; }
+          .lunbotu .cont .lbt_c .lbt_c_b .lbt_c_b_3 > a {
+            width: 290px;
+            height: 181px; }
 
 .fenlei {
+  overflow: hidden;
   width: 100%; }
   .fenlei .cont {
-    height: 300px; }
+    height: 300px;
+    overflow: hidden; }
+    .fenlei .cont .fenlei_t {
+      height: 42px; }
+      .fenlei .cont .fenlei_t .fenlei_t_t {
+        display: block;
+        width: 237px;
+        height: 42px;
+        border-bottom: 1px solid #d0d0d0;
+        text-align: center;
+        line-height: 42px; }
+      .fenlei .cont .fenlei_t :hover {
+        color: #EF3C79;
+        border-bottom: 3px solid #EF3C79; }
+    .fenlei .cont > .fenlei_b {
+      padding-top: 5px; }
+      .fenlei .cont > .fenlei_b .fenlei_b_b {
+        display: block;
+        height: 253px; }
+        .fenlei .cont > .fenlei_b .fenlei_b_b .idxa {
+          position: relative;
+          border: 1px solid #f0f0f0;
+          border-top: 0;
+          padding-left: 3px;
+          display: block;
+          width: 192px;
+          height: 248px; }
+          .fenlei .cont > .fenlei_b .fenlei_b_b .idxa:hover {
+            border: 2px solid #EF3C79; }
+          .fenlei .cont > .fenlei_b .fenlei_b_b .idxa .pho_div {
+            display: block; }
+            .fenlei .cont > .fenlei_b .fenlei_b_b .idxa .pho_div > img {
+              width: 100%;
+              height: 100%; }
+          .fenlei .cont > .fenlei_b .fenlei_b_b .idxa .data_name {
+            font-size: 10px; }
+          .fenlei .cont > .fenlei_b .fenlei_b_b .idxa .data_yuan {
+            color: red;
+            font-size: 16px;
+            position: absolute;
+            top: 220px;
+            right: 30px; }
 
 .fenlei_1F {
-  width: 100%; }
+  width: 100%;
+  margin-top: 2px; }
   .fenlei_1F .cont {
     height: 556px; }
+    .fenlei_1F .cont > .F1_l {
+      width: 210px;
+      height: 550px;
+      background: url("../img/F1zuo.png") no-repeat; }
+      .fenlei_1F .cont > .F1_l > .F3_l_lb {
+        width: 208px;
+        height: 220px;
+        background: #EF3C79;
+        position: relative;
+        top: 330px; }
+        .fenlei_1F .cont > .F1_l > .F3_l_lb .span_FF {
+          display: block;
+          width: 100px;
+          color: #fff;
+          float: left;
+          line-height: 40px; }
+    .fenlei_1F .cont > .F1_c {
+      width: 776px;
+      height: 550px;
+      border-bottom: 1px solid #ccc; }
+      .fenlei_1F .cont > .F1_c .FFF1 {
+        display: block;
+        width: 775px;
+        height: 56px;
+        background: #fff;
+        border-bottom: 1px solid #ccc; }
+        .fenlei_1F .cont > .F1_c .FFF1 :hover {
+          color: #EF3C79;
+          border-bottom: 2px solid #EF3C79; }
+        .fenlei_1F .cont > .F1_c .FFF1 .FFFa {
+          width: 190px;
+          line-height: 54px;
+          text-align: center; }
+        .fenlei_1F .cont > .F1_c .FFF1 .aaaFF {
+          display: block;
+          width: 770px;
+          height: 546px;
+          background: red;
+          overflow: hidden; }
+          .fenlei_1F .cont > .F1_c .FFF1 .aaaFF .affa1 {
+            display: block;
+            width: 770px;
+            height: 546px; }
+            .fenlei_1F .cont > .F1_c .FFF1 .aaaFF .affa1 .idxa {
+              position: relative;
+              border: 1px solid #f0f0f0;
+              border-top: 0;
+              padding-left: 3px;
+              display: block;
+              width: 192px;
+              height: 248px; }
+              .fenlei_1F .cont > .F1_c .FFF1 .aaaFF .affa1 .idxa:hover {
+                border: 2px solid #EF3C79; }
+              .fenlei_1F .cont > .F1_c .FFF1 .aaaFF .affa1 .idxa .pho_div {
+                display: block; }
+                .fenlei_1F .cont > .F1_c .FFF1 .aaaFF .affa1 .idxa .pho_div > img {
+                  width: 100%;
+                  height: 100%; }
+              .fenlei_1F .cont > .F1_c .FFF1 .aaaFF .affa1 .idxa .data_name {
+                font-size: 10px; }
+              .fenlei_1F .cont > .F1_c .FFF1 .aaaFF .affa1 .idxa .data_yuan {
+                color: red;
+                font-size: 16px;
+                position: absolute;
+                top: 220px;
+                right: 30px; }
+    .fenlei_1F .cont > .F1_b {
+      width: 206px;
+      height: 550px;
+      background: url("../img/F1you.png") no-repeat; }
 
 .fenlei_2F {
+  margin-top: 2px;
   width: 100%; }
   .fenlei_2F .cont {
     height: 556px; }
+    .fenlei_2F .cont > .F2_l {
+      width: 210px;
+      height: 550px;
+      background: url("../img/F1zuo.png") no-repeat; }
+      .fenlei_2F .cont > .F2_l > .F3_l_lb {
+        width: 208px;
+        height: 220px;
+        background: #EF3C79;
+        position: relative;
+        top: 330px;
+        color: #fff; }
+        .fenlei_2F .cont > .F2_l > .F3_l_lb .span_FF {
+          display: block;
+          width: 100px;
+          color: #fff;
+          float: left;
+          line-height: 40px; }
+    .fenlei_2F .cont > .F2_c {
+      width: 776px;
+      height: 550px;
+      border-bottom: 1px solid #ccc; }
+      .fenlei_2F .cont > .F2_c .FFF2 {
+        display: block;
+        width: 775px;
+        height: 56px;
+        background: #fff;
+        border-bottom: 1px solid #ccc; }
+        .fenlei_2F .cont > .F2_c .FFF2 :hover {
+          color: #EF3C79;
+          border-bottom: 2px solid #EF3C79; }
+        .fenlei_2F .cont > .F2_c .FFF2 .FFFa {
+          width: 190px;
+          line-height: 54px;
+          text-align: center; }
+        .fenlei_2F .cont > .F2_c .FFF2 .aaaFF {
+          display: block;
+          width: 770px;
+          height: 546px;
+          background: red; }
+          .fenlei_2F .cont > .F2_c .FFF2 .aaaFF .affa {
+            display: block;
+            width: 770px;
+            height: 546px; }
+            .fenlei_2F .cont > .F2_c .FFF2 .aaaFF .affa .idxa {
+              position: relative;
+              border: 1px solid #f0f0f0;
+              border-top: 0;
+              padding-left: 3px;
+              display: block;
+              width: 192px;
+              height: 248px; }
+              .fenlei_2F .cont > .F2_c .FFF2 .aaaFF .affa .idxa:hover {
+                border: 2px solid #EF3C79; }
+              .fenlei_2F .cont > .F2_c .FFF2 .aaaFF .affa .idxa .pho_div {
+                display: block; }
+                .fenlei_2F .cont > .F2_c .FFF2 .aaaFF .affa .idxa .pho_div > img {
+                  width: 100%;
+                  height: 100%; }
+              .fenlei_2F .cont > .F2_c .FFF2 .aaaFF .affa .idxa .data_name {
+                font-size: 10px; }
+              .fenlei_2F .cont > .F2_c .FFF2 .aaaFF .affa .idxa .data_yuan {
+                color: red;
+                font-size: 16px;
+                position: absolute;
+                top: 220px;
+                right: 30px; }
 
 .fenlei_3F {
+  margin-top: 3px;
   width: 100%; }
   .fenlei_3F .cont {
     height: 556px; }
+    .fenlei_3F .cont > .F3_l {
+      width: 210px;
+      height: 550px;
+      background: url("../img/F1zuo.png") no-repeat; }
+      .fenlei_3F .cont > .F3_l .F3_l_lb {
+        width: 208px;
+        height: 220px;
+        background: #EF3C79;
+        position: relative;
+        top: 330px; }
+        .fenlei_3F .cont > .F3_l .F3_l_lb .span_FF {
+          display: block;
+          width: 100px;
+          color: #fff;
+          float: left;
+          line-height: 40px; }
+    .fenlei_3F .cont > .F3_c {
+      width: 776px;
+      height: 550px;
+      border-bottom: 1px solid #ccc; }
+      .fenlei_3F .cont > .F3_c .FFF3 {
+        display: block;
+        width: 775px;
+        height: 56px;
+        background: #fff;
+        border-bottom: 1px solid #ccc; }
+        .fenlei_3F .cont > .F3_c .FFF3 :hover {
+          color: #EF3C79;
+          border-bottom: 2px solid #EF3C79; }
+        .fenlei_3F .cont > .F3_c .FFF3 .FFFa {
+          width: 190px;
+          line-height: 54px;
+          text-align: center; }
+        .fenlei_3F .cont > .F3_c .FFF3 .aaaFF {
+          display: block;
+          width: 770px;
+          height: 546px;
+          background: red; }
+          .fenlei_3F .cont > .F3_c .FFF3 .aaaFF .affa {
+            display: block;
+            width: 770px;
+            height: 546px; }
+            .fenlei_3F .cont > .F3_c .FFF3 .aaaFF .affa .idxa {
+              position: relative;
+              border: 1px solid #f0f0f0;
+              border-top: 0;
+              padding-left: 3px;
+              display: block;
+              width: 192px;
+              height: 248px; }
+              .fenlei_3F .cont > .F3_c .FFF3 .aaaFF .affa .idxa:hover {
+                border: 2px solid #EF3C79; }
+              .fenlei_3F .cont > .F3_c .FFF3 .aaaFF .affa .idxa .pho_div {
+                display: block; }
+                .fenlei_3F .cont > .F3_c .FFF3 .aaaFF .affa .idxa .pho_div > img {
+                  width: 100%;
+                  height: 100%; }
+              .fenlei_3F .cont > .F3_c .FFF3 .aaaFF .affa .idxa .data_name {
+                font-size: 10px; }
+              .fenlei_3F .cont > .F3_c .FFF3 .aaaFF .affa .idxa .data_yuan {
+                color: red;
+                font-size: 16px;
+                position: absolute;
+                top: 220px;
+                right: 30px; }
+      .fenlei_3F .cont > .F3_c > .F3_b {
+        width: 206px;
+        height: 550px;
+        background: url("../img/F1you.png") no-repeat; }

@@ -1,0 +1,119 @@
+
+
+
+
+
+require(['config'], function(){
+    require(['jquery','index','slide'],function(){
+
+  $.ajax({
+            url: '../api/index.php',
+            dataType: 'json',
+            data:  1,
+            success:function(res){
+                console.log(res);
+
+
+// 获取到 相应的 点击 索引值
+                var $idx1 ;
+                var $aa1 = $('.fenlei_t').children('span')
+                var $aa2 = $('.FFF1').children('.FFFa')
+                var $aa3 = $('.FFF2').children('.FFFa')
+                var $aa4 = $('.FFF3').children('.FFFa')
+
+
+// --------------------------
+                     var html = '';
+                        $.each(res.data1, function(index, val){
+                            html += idx_FS(val)
+                        });
+                        $('.fenlei_b_b').html('');
+                        $('.fenlei_b_b').html(html);
+// ---------------------------
+                     var html = '';
+                        $.each(res.data1, function(index, val){
+                            html += idx_FS(val)
+                        });
+                        $('.affa1').html('');
+                        $('.affa1').html(html);
+
+// ---------------------------
+                $aa1.mouseover(function(){
+                     $idx1 = $aa1.index(this);
+                     // console.log($idx1)
+// ---------------------------
+
+
+
+// --------------------------------------------------
+// 尝试 第   1  次 获取 数据
+                    if($idx1 == 0){
+                        var html = '';
+                        $.each(res.data1, function(index,val){
+                            html += idx_FS(val)
+                        });
+                           $('.fenlei_b_b').html('');
+                           $('.fenlei_b_b').html(html);
+                    }
+// 尝试 第    2   次 获取 数据
+                    else if($idx1 == 1){
+                        var html = '';
+                        $.each(res.data2, function(index,val){
+                            html += idx_FS(val)
+                        });
+                           $('.fenlei_b_b').html('');
+                           $('.fenlei_b_b').html(html);
+                    }                    
+// 尝试 第    3   次 获取 数据
+                    else if($idx1 == 2){
+                        var html = '';
+                        $.each(res.data3, function(index,val){
+                            html += idx_FS(val)
+                        });
+                           $('.fenlei_b_b').html('');
+                           $('.fenlei_b_b').html(html);
+                    }
+// 尝试 第   4   次 获取 数据
+                    else if($idx1 == 3){
+                        var html = '';
+                        $.each(res.data4, function(index,val){
+                            html += idx_FS(val)
+                        });
+                           $('.fenlei_b_b').html('');
+                           $('.fenlei_b_b').html(html);
+                    }
+// 尝试 第   5   次 获取 数据
+                    else if($idx1 == 4){
+                        var html = '';
+                        $.each(res.data5, function(index,val){
+                            html += idx_FS(val)
+                        });
+                           $('.fenlei_b_b').html('');
+                           $('.fenlei_b_b').html(html);
+                    }
+// --------------------------------------------------
+
+
+
+        })
+    }
+});
+
+
+        function idx_FS(val){
+            return  '<div class=" '+ val.id +' fl idxa">' +
+                '<a class="" href="#">'+
+                '<div class="pho_div">'+ 
+                    '<img src="'+ val.photo +'"  class="pho1"/>'
+                 +'</div>'+
+                '<div class="data_name">'+ val.username +'</div>'+
+                '<div class="data_yuan">'+ "￥" +val.price +'</div></a>'
+            +'</div>'
+        }
+
+
+
+
+
+    })
+})

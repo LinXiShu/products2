@@ -1,0 +1,217 @@
+.header .dingwei {
+  z-index: 1000;
+  display: block;
+  position: fixed;
+  width: 40px;
+  height: 100%;
+  background: black;
+  right: 0; }
+  .header .dingwei > .cont2 {
+    width: 40px;
+    height: 580px;
+    color: #fff;
+    margin: 200px 0; }
+    .header .dingwei > .cont2 > .dw1 {
+      width: 40px;
+      height: 60px;
+      position: relative; }
+      .header .dingwei > .cont2 > .dw1 > .dw_dl_dc {
+        position: absolute;
+        width: 90px;
+        height: 40px;
+        background: #666;
+        left: -91px;
+        top: 10px;
+        font-size: 14px;
+        line-height: 40px;
+        text-align: center; }
+    .header .dingwei > .cont2 :hover {
+      background: #EF3C79; }
+    .header .dingwei > .cont2 > .dw2 {
+      width: 40px;
+      height: 190px;
+      border: 1px dashed #ccc;
+      border-left: none;
+      border-right: none; }
+      .header .dingwei > .cont2 > .dw2 a {
+        color: #fff; }
+        .header .dingwei > .cont2 > .dw2 a > .spans {
+          display: block;
+          width: 20px;
+          height: 120px;
+          margin-left: 12px;
+          padding-top: 30px; }
+    .header .dingwei > .cont2 > .dw3 {
+      width: 40px;
+      height: 50px; }
+    .header .dingwei > .cont2 > .dw4 {
+      width: 40px;
+      height: 50px;
+      display: block;
+      font-size: 14px; }
+
+.nav_b {
+  width: 100%; }
+  .nav_b .cont {
+    width: 1200px;
+    height: 38px; }
+    .nav_b .cont > .iconfont {
+      line-height: 36px; }
+    .nav_b .cont > span {
+      line-height: 36px;
+      font-size: 10px; }
+
+.xiangqing {
+  width: 100%; }
+  .xiangqing .cont {
+    width: 1200px;
+    height: 539px;
+    border: 1px solid #ddd; }
+    .xiangqing .cont .xq_zuo {
+      width: 980px;
+      height: 539px; }
+      .xiangqing .cont .xq_zuo .xq_zuo_z {
+        width: 430px;
+        height: 485px;
+        /*.gds-zoom-big img{min-width: 1000px;}*/ }
+        .xiangqing .cont .xq_zuo .xq_zuo_z .gds-zoom {
+          position: relative;
+          width: 300px;
+          overflow: hidden; }
+        .xiangqing .cont .xq_zuo .xq_zuo_z .gds-zoom img {
+          display: block; }
+        .xiangqing .cont .xq_zuo .xq_zuo_z .gds-zoom .minzoom {
+          display: none;
+          position: absolute;
+          width: 30px;
+          height: 30px;
+          border: 1px solid #fc0;
+          background-color: #ff0;
+          background-color: rgba(255, 255, 0, 0.3);
+          filter: alpha(Opacity=30); }
+        .xiangqing .cont .xq_zuo .xq_zuo_z .gds-zoom-big {
+          display: none;
+          position: absolute;
+          width: 400px;
+          height: 300px;
+          overflow: hidden; }
+        .xiangqing .cont .xq_zuo .xq_zuo_z .gds-zoom-big img {
+          position: absolute;
+          left: 0;
+          right: 0; }
+        .xiangqing .cont .xq_zuo .xq_zuo_z .smallList {
+          width: 450px; }
+        .xiangqing .cont .xq_zuo .xq_zuo_z .smallList img {
+          width: 80px; }
+        .xiangqing .cont .xq_zuo .xq_zuo_z .aaa {
+          width: 420px;
+          height: 420px; }
+      .xiangqing .cont .xq_zuo .xq_zuo_c {
+        width: 540px;
+        height: 520px;
+        border-left: 1px solid #ddd; }
+    .xiangqing .cont .xq_youa {
+      width: 220px;
+      height: 539px; }
+      .xiangqing .cont .xq_youa > .xq_youa1 {
+        line-height: 30px;
+        border: 1px solid #ddd;
+        border-right: none;
+        border-top: none;
+        background: #f0f0f0;
+        text-indent: 1em;
+        font-size: 14px;
+        display: block; }
+      .xiangqing .cont .xq_youa .xq_youa3 {
+        display: block;
+        width: 110px;
+        height: 110px; }
+        .xiangqing .cont .xq_youa .xq_youa3 > .aa1 {
+          width: 80px;
+          height: 70px;
+          background: url("../img/xiao11.png") no-repeat; }
+
+.tupian {
+  width: 100%;
+  overflow: hidden; }
+  .tupian .cont {
+    width: 1200px;
+    margin-top: 30px;
+    overflow: hidden; }
+    .tupian .cont .tupian_zuo {
+      width: 212px;
+      height: 4000px;
+      overflow: hidden; }
+      .tupian .cont .tupian_zuo > .zuo_1 {
+        height: 38px;
+        line-height: 38px;
+        text-indent: 1em;
+        font-size: 14px;
+        border: 1px solid #ccc; }
+      .tupian .cont .tupian_zuo > .zuo_2 {
+        border: 1px solid #ccc;
+        margin-top: 15px; }
+        .tupian .cont .tupian_zuo > .zuo_2 > .zuo_2_1 {
+          width: 210px;
+          height: 34px;
+          border-bottom: 1px solid #ccc;
+          background: #f0f0f0;
+          text-indent: 1em;
+          line-height: 38px; }
+        .tupian .cont .tupian_zuo > .zuo_2 > .zuo_2_2 {
+          width: 210px;
+          height: 300px; }
+      .tupian .cont .tupian_zuo > .zuo_3 {
+        border: 1px solid #ccc;
+        margin-top: 15px; }
+        .tupian .cont .tupian_zuo > .zuo_3 > .zuo_3_1 {
+          width: 210px;
+          height: 34px;
+          border-bottom: 1px solid #ccc;
+          background: #f0f0f0;
+          text-indent: 1em;
+          line-height: 38px; }
+        .tupian .cont .tupian_zuo > .zuo_3 > .zuo_3_2 {
+          width: 210px;
+          height: 300px; }
+    .tupian .cont .tupian_you {
+      display: block;
+      width: 972px;
+      height: 4000px;
+      margin-left: 10px;
+      overflow: hidden; }
+      .tupian .cont .tupian_you .ty_t {
+        display: block;
+        width: 968px;
+        height: 40px;
+        border: 1px solid #DDD; }
+        .tupian .cont .tupian_you .ty_t .ty_t_1 {
+          width: 160px;
+          height: 40px;
+          border-right: 1px solid #DDD;
+          line-height: 40px;
+          text-align: center; }
+        .tupian .cont .tupian_you .ty_t .ty_t_1:hover {
+          border-bottom: 2px solid #EF3C79; }
+        .tupian .cont .tupian_you .ty_t .ty_t_2 {
+          width: 160px;
+          height: 40px;
+          border-right: 1px solid #DDD;
+          line-height: 40px;
+          text-align: center; }
+        .tupian .cont .tupian_you .ty_t .ty_t_2:hover {
+          border-bottom: 2px solid #EF3C79; }
+        .tupian .cont .tupian_you .ty_t .ty_t_3 {
+          width: 160px;
+          height: 40px;
+          border-right: 1px solid #DDD;
+          line-height: 40px;
+          text-align: center; }
+        .tupian .cont .tupian_you .ty_t .ty_t_3:hover {
+          border-bottom: 2px solid #EF3C79; }
+      .tupian .cont .tupian_you .ty_b {
+        display: block;
+        width: 968px;
+        height: 4000px;
+        margin-top: 15px;
+        background: url("../img/photo.png"); }

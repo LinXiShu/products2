@@ -1,0 +1,154 @@
+
+
+
+.header{
+        
+    .dingwei{
+        z-index: 1000;
+        display: block;
+        position: fixed;
+        width:40px;height:100%;
+        background: black;
+        right: 0;
+        > .cont2{
+            width:40px;
+            height:580px;color:#fff;
+            margin: 200px 0;
+            > .dw1{width: 40px;height: 60px;position: relative; 
+                > .dw_dl_dc{position: absolute; width: 90px; height: 40px;background: #666;left: -91px; top: 10px; font-size: 14px;line-height: 40px; text-align: center;} 
+
+            } :hover{background: #EF3C79;}
+
+            > .dw2{width: 40px;height: 190px; border:1px dashed #ccc;border-left:none;border-right: none; 
+                a{color: #fff;
+                > .spans {display: block; width: 20px; height: 120px;margin-left: 12px; padding-top: 30px;}
+                }
+            }
+            > .dw3{width: 40px;height: 50px;}
+            > .dw4{width: 40px;height: 50px; display: block;
+                        font-size: 14px;
+            }
+            
+        }
+    }
+}
+
+
+
+
+
+.nav_b{ width: 100%; 
+        .cont{
+            width: 1200px;height: 38px;
+            > .iconfont{line-height:36px;}
+            > span{line-height: 36px;font-size:10px;}
+        }
+}
+
+.xiangqing{ width: 100%; 
+        .cont{
+            width: 1200px;height: 539px;border: 1px solid #ddd;
+             .xq_zuo{
+                width: 980px; height: 539px;
+                .xq_zuo_z{width:430px;height:485px;
+
+
+
+
+// ---------------------------------------------------------------------
+.gds-zoom{position:relative;width:300px;overflow:hidden;}
+.gds-zoom img{display:block;}
+.gds-zoom .minzoom{display:none;position: absolute;width:30px;height:30px;border:1px solid #fc0;background-color:#ff0;background-color: rgba(255,255,0,.3);filter:alpha(Opacity=30);}
+.gds-zoom-big{display:none;position: absolute;width:400px;height:300px;overflow:hidden;}
+.gds-zoom-big img{position: absolute;left:0;right:0;}
+
+.smallList{width: 450px}
+
+.smallList img{width:80px;}
+
+/*.gds-zoom-big img{min-width: 1000px;}*/
+
+
+
+.aaa{
+    width: 420px; height: 420px;
+    
+}
+
+
+
+// ----------------------------------------------------------------------
+
+
+                }
+                .xq_zuo_c{width: 540px;height: 520px;
+                    border-left: 1px solid #ddd;
+                }
+            }
+             .xq_youa{
+                width: 220px; height: 539px;
+                > .xq_youa1{line-height:30px;border: 1px solid #ddd;border-right: none; border-top:none;;background: #f0f0f0; text-indent: 1em;font-size: 14px;display:block;
+                }
+                .xq_youa3{display:block;;width: 110px;height: 110px;;
+                    > .aa1{width:80px;height:70px;background: url('../img/xiao11.png')no-repeat}
+                    span{}
+
+            }
+        }
+    }
+}
+
+
+
+.tupian{ width: 100%; 
+        overflow: hidden;
+        .cont{ 
+            width: 1200px;margin-top: 30px;
+        overflow: hidden;
+        .tupian_zuo{
+            width: 212px;height: 4000px;
+     
+                > .zuo_1{height: 38px; line-height:38px; text-indent: 1em; font-size: 14px; 
+                      border: 1px solid #ccc;
+                }
+                // .aafa{width: ;height: ;}
+                > .zuo_2{   border: 1px solid #ccc;margin-top: 15px;
+                    > .zuo_2_1{width: 210px;height: 34px;border-bottom: 1px solid #ccc;background:#f0f0f0;
+                            text-indent: 1em; line-height:38px;
+                    }
+                    > .zuo_2_2{width: 210px;height: 300px;}
+                }
+                > .zuo_3{   border: 1px solid #ccc;margin-top: 15px;
+                    > .zuo_3_1{width: 210px;height: 34px;border-bottom: 1px solid #ccc;background:#f0f0f0;
+                            text-indent: 1em; line-height:38px;
+                    }
+                    > .zuo_3_2{width: 210px;height: 300px;}
+                }
+
+        overflow: hidden;
+        }
+
+        .tupian_you{display: block;
+            width: 972px;height: 4000px; margin-left: 10px;
+
+                overflow: hidden;
+            .ty_t{display: block;width: 968px;height: 40px;
+                    border: 1px solid #DDD;
+                .ty_t_1{width: 160px;height: 40px;border-right: 1px solid #DDD; line-height: 40px; text-align: center;}
+                        .ty_t_1:hover  {border-bottom: 2px solid #EF3C79;}
+
+                .ty_t_2{width: 160px;height: 40px;border-right: 1px solid #DDD; line-height: 40px; text-align: center;}
+                        .ty_t_2:hover  {border-bottom: 2px solid #EF3C79;}
+
+                .ty_t_3{width: 160px;height: 40px;border-right: 1px solid #DDD;line-height: 40px; text-align: center;}
+                        .ty_t_3:hover  {border-bottom: 2px solid #EF3C79;}
+
+            } 
+            .ty_b{display: block;width: 968px;height: 4000px;  margin-top: 15px; 
+                background: url('../img/photo.png');
+
+            }
+        }
+    }
+}
+

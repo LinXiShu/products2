@@ -1,0 +1,106 @@
+
+
+
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img,input{margin:0; padding:0; }
+ul,li{list-style:none;}
+a{text-decoration:none;display:block;}
+i{text-decoration:none;}
+*{margin:0;padding:0;}
+.z12{font-size:12px;}
+.z14{font-size:14px;}
+.z16{font-size:16px;}
+.z36{font-size:0.5625rem;}
+.z40{font-size:0.625rem;}
+.z50{font-size:0.78125rem;}
+.z22{font-size:0.34375rem;}
+.z24{font-size:24px;}
+.z30{font-size:30px;}
+
+
+
+.blue{color:blue;}
+.sky{color:skyblue;}
+.fl{float:left;}
+.fr{float:right;}
+.over{overflow:hidden;}
+
+.red{color:#a21f25;}
+
+.red{color:red;}
+.wRed{color: #EF3C79;}
+.black{color: black;}
+.white{color: #fff}
+.bc58{color:#58bc58;}
+
+.ds{display: block;}
+.wh{width: 100px;}
+.pd2{padding-top: 2px;}
+
+.wRed_bg{background: #EF3C79;}
+
+.over{overflow:hidden;}
+
+.nones{font-size:none;}
+.textw{font-weight:bold;}
+.padd-t50{padding-top:50px;}
+.xiaHua{text-decoration:underline;}
+
+.p-top{padding-top:20px;}
+.p-right{padding-right:20px;}
+.p-bottom{padding-bottom:20px;}
+.p-left{padding-left:20px;}
+
+
+
+.rel{position: relative;}
+.abs{position: absolute;}
+
+.cont{width: 1100px;margin: 0 auto;}
+
+
+header{display: block;   border-bottom: 1px solid #f0f0f0 ;
+    width: 100%;
+    
+    .cont{
+        height: 110px; 
+        h1{display: block;width: 202px; height: 84px;background: url('../img/logo.png')no-repeat; margin-top: 20px;}
+        > .head_fr{ 
+            margin-top: 40px;
+
+            > .head_fr_l{width: 50px;height: 48px; background: url(../img/xiaobai.png)no-repeat;}
+            > .head_fr_r{width: 264px;height:48px;
+                > .span_aa{color: #999;}
+                a{display: block;}
+            }
+         }
+    }
+}
+
+.main{ 
+    
+    border: 1px solid #f0f0f0;
+    background: #F9F9F9;
+    > .cont{
+        height: 460px;
+        > .main_l{display: block;width: 550px;height: 450px ;background:100% url('../img/login.jpg')no-repeat }
+        > .main_r{display: block;width: 550px;height: 450px ;background: #fff; margin-top: 10px;
+            > .tou{    display: block;height: 60px;
+             div{display: block; width: 260px;height: 58px; text-align: center; line-height: 50px; border-bottom: 1px solid #ccc; font-size: 18px;}
+                     .login { border-bottom: 2px solid  #EF3C79; color: #EF3C79;} 
+              }
+              > .shen {
+                > .shen_input{
+                    display: block;
+                    width: 380px; height: 350px;margin: 20px auto;
+                    > div{ width: 80px;height: 53px;border:1px solid #ccc; border-right: 0; line-height: 53px; text-align: center; margin-top: 20px;}
+                    > .txt{width: 267px;height: 53px;border:1px solid #ccc; border-left: 0; margin-top: 20px;}
+                    > .span_wjmm{margin: 15px 25px 0 0;color: red;}
+                > .denglu{display: block;width: 347px;height: 44px;background: url('../img/zhuche.png')no-repeat;
+                    top: 280px;
+                    > a{height: 44px;}
+                    }
+                }
+            }
+        }
+    }
+}

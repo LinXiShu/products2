@@ -9,6 +9,8 @@ i{text-decoration:none;}
 .z12{font-size:12px;}
 .z14{font-size:14px;}
 .z16{font-size:16px;}
+.z20{font-size:20px;}
+
 .z36{font-size:0.5625rem;}
 .z40{font-size:0.625rem;}
 .z50{font-size:0.78125rem;}
@@ -167,9 +169,12 @@ header{
                 }
             }
             > .pigu_weiba{width: 1200px;height: 50px;margin-top: 100px ;
-                > .pigu_weiba_ul{ 
-                    > .li{display:block; 
-                        > .a{width: 30px;height: 30px;}}}
+                > .pigu_weiba_ul{display: block; width: 230px;height:50px;margin: 0 auto;
+
+                    > li{
+                        a{display:block;width:50px;color: #666; font-size: 12px; margin: 0; text-align: center;}}
+                    > .aa{width:300px;height:40px;display: block;margin:0 auto; font-size: 14px; color: #666666;}
+                }
             }
     }
 }

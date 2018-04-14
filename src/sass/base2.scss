@@ -1,0 +1,230 @@
+
+
+
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img,input{margin:0; padding:0; }
+ul,li{list-style:none;}
+a{text-decoration:none;display:block;}
+i{text-decoration:none;}
+*{margin:0;padding:0;}
+.z12{font-size:12px;}
+.z14{font-size:14px;}
+.z16{font-size:16px;}
+.z36{font-size:0.5625rem;}
+.z40{font-size:0.625rem;}
+.z50{font-size:0.78125rem;}
+.z22{font-size:0.34375rem;}
+.z24{font-size:24px;}
+.z30{font-size:30px;}
+
+
+
+.blue{color:blue;}
+.sky{color:skyblue;}
+.fl{float:left;}
+.fr{float:right;}
+.over{overflow:hidden;}
+
+.red{color:#a21f25;}
+
+.red{color:red;}
+.wRed{color: #EF3C79;}
+.black{color: black;}
+.white{color: #fff}
+.bc58{color:#58bc58;}
+
+.ds{display: block;}
+.wh{width: 100px;}
+.pd2{padding-top: 2px;}
+
+.wRed_bg{background: #EF3C79;}
+
+.over{overflow:hidden;}
+
+.nones{font-size:none;}
+.textw{font-weight:bold;}
+.padd-t50{padding-top:50px;}
+.xiaHua{text-decoration:underline;}
+
+.p-top{padding-top:20px;}
+.p-right{padding-right:20px;}
+.p-bottom{padding-bottom:20px;}
+.p-left{padding-left:20px;}
+
+
+.cont{width:1200px; margin:0 auto;}
+
+.rel{position: relative;}
+.abs{position: absolute;}
+
+
+header{
+    width: 100%;
+    background: #FAFAFA;
+    height:30px;
+    border-bottom:1px solid #ccc;
+    .header_t{
+        line-height:28px;   
+        span, a{float:left; font-size:14px;}
+    }
+    .header_r{
+        float: right;
+        .span_l{
+            position:relative;
+            float: left;
+            line-height:28px;
+            font-size:14px;
+            
+            > .span_l_div{position:absolute;display: block;width:90px;height:  px; top: 0px;display: none;background: #fff;border: 1px solid #ccc;
+                
+                > .span_l_div_dd{
+                    
+                    font-size: 14px;
+                    height: 28px;
+                    width:90px;
+                    background: #fff;
+
+                    a{}
+                }
+            } &:hover > .span_l_div{display:block;}
+            
+        } 
+        .span_c{
+            position:relative;
+            float: left;
+            line-height:28px;
+            font-size:14px;
+            
+
+            > .span_c_div{position:absolute;display: block;width:90px;height:  px; top: 0px;display: none;background: #fff;border: 1px solid #ccc;
+                
+                > .span_c_div_dd{
+                    
+                    font-size: 14px;
+                    height: 28px;
+                    width:90px;
+                    background: #fff;
+
+                    a{}
+                }
+            } &:hover > .span_c_div{display:block;} 
+        } 
+        .span_r{
+            position:relative;
+            float: left;
+            line-height:28px;
+            font-size:14px;
+            
+            > .span_r_div{position:absolute;display: block;width:90px;height: px; top: 0px;display:none;background: #fff;border: 1px solid #ccc;
+                        
+                > .span_r_div_dd{
+                    
+                    font-size: 14px;
+                    height: 28px;
+                    width:90px;
+                    background: #fff;
+
+                    a{}
+                }
+            } &:hover > .span_r_div{display:block;} 
+        }
+    }
+}
+
+.inputs{
+    width: 100%;
+    .cont{
+        height:102px;
+        > .inputs_l{
+            .logo{background:url('../img/logo.png')no-repeat;margin-top: 20px; width: 276px; height: 80px; }
+        }
+
+        > .inputs_c{width: 659px;height: 100px; 
+            .txt{width: 428px;height: 38px;margin-top: 26px;border: 1px solid #ccc;padding-top: 2px;}
+            .btn{width: 85px; height: 42px;margin-top: 26px; border:none;font-size: 18px;}
+        }
+       
+        > .inputs_r{width: 255px;height: 100px; 
+            .input_l{width: 115px;height: 44px;border: 1px solid #f0f0f0;float: left;margin-top: 26px; background: #FAFAFA;margin-right: 8px;line-height:45px; font-size: 14px;text-align: center;}
+            .input_r{width: 115px;height: 44px;border: 1px solid #f0f0f0;float: left;margin-top: 26px; background: #FAFAFA;margin-right: 8px;line-height:45px; font-size: 14px;text-align: center;}
+        }
+    }
+}
+
+nav{
+    width:100%;
+    border-bottom: 2px solid #EF3C79;
+    .cont{height: 38px;
+
+          .nav_l{width: 210px;height: 38px;color: #fff; line-height:36px;background: #EF3C79;font-weight: bold; 
+            > .kawei { width:20px;height: 30px;}
+            > .i {font-weight: bold; padding-left: 40px;}
+            >  a {display:block; width: 70px; color: #fff; font-size: 14px;}  
+
+
+            > .twoji{display: none; position:relative ;width:208px;height:484px;top: 0px; z-index: 10000;font-size: 14px; border: 1px solid #ccc; background: #fff;
+                    > .threeji_1{position: relative; 
+                        > div{color: black;};
+                    > .threeji_far{ display: none; >.ul_li{padding-left: 100px; > li{padding-right: 20px;}}}
+                  } 
+                 &:hover .threeji_far{display: block;;position: absolute;top: 3px; left: 208px; background: #fff; width:978px;height:438px; border: 1px solid #ccc; margin: 0;}
+                    .twoji_oo{color: #ccc; 
+                    } & > a:hover{ color: red;}                
+                   
+        } &:hover .twoji{display: block;}
+        
+    }
+         
+        ul{  li{float: left;} 
+            a{height: 38px; ;padding: 0 30px 0 30px;line-height: 36px;}
+            :hover {color: red;}
+         }
+    }
+}
+
+
+
+
+
+
+
+//                  假装是内容 ...!
+
+
+
+
+
+
+
+
+
+.pigu{
+    width:100%;
+    .cont{ height: 400px; 
+           > .pigu_t{display: block; width: 1200px;height: 85px;background: url(../img/pigu_heng.png)no-repeat }
+           > .pigu_c{display: block; width: 1200px;height: 20px;padding: 50px 0 50px 0 ; border-bottom: 1px solid #f0f0f0;
+                > .hm {display: block;width: 294px;height: 40px;border-right: 1px solid #ccc;  line-height: 40px;
+                    > .pigu_hm{width:80px;height:80px;display: block; background: url(../img/xiao7.png)no-repeat 12px 14px; position: relative; top: -20px;}
+            }
+                > .pigu_c_4 {border: none;}
+        }
+            > .pigu_b{
+                display: block; width: 1200px;height: 100px;
+                ul{
+                    padding: 30px 90px ;
+                    width: 86px;height: 146px;display: block;
+                    > .pigu_h1{position:relative; display:block;left: -13px;}
+                    > .pigu_xiao{ font-size: 14px;color: #999; list-style-type: disc;}
+                }
+            }
+            > .pigu_weiba{width: 1200px;height: 50px;margin-top: 100px ;
+                > .pigu_weiba_ul{display: block; width: 230px;height:50px;margin: 0 auto;
+
+                    > li{
+                        a{display:block;width:50px;color: #666; font-size: 12px; margin: 0; text-align: center;}}
+                    > .aa{width:300px;height:40px;display: block;margin:0 auto; font-size: 14px; color: #666666;}
+                }
+            }
+    }
+}
+
+
