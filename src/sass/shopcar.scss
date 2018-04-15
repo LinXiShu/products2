@@ -136,7 +136,8 @@ header{
 nav{
 width: 100%;
     .cont{height: 104px;display: block;
-    > .logo{width: 280px;height: 102px;background: url('../img/logo1.png')no-repeat;}
+        a{
+    > .logo{width: 280px;height: 102px;background: url('../img/logo1.png')no-repeat;}}
     > .logo_you{width: 722px;height: 102px;background: url('../img/logo2.png')no-repeat;}
         border-bottom: 1px solid #f0f0f0; overflow: hidden;
     }

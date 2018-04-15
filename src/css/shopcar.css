@@ -208,7 +208,7 @@ nav {
     display: block;
     border-bottom: 1px solid #f0f0f0;
     overflow: hidden; }
-    nav .cont > .logo {
+    nav .cont a > .logo {
       width: 280px;
       height: 102px;
       background: url("../img/logo1.png") no-repeat; }

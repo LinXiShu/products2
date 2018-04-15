@@ -102,6 +102,7 @@ require(['config'], function(){
 // ---------------------------
                 $aa1.mouseover(function(){
                      $idx1 = $aa1.index(this);
+
                      // console.log($idx1)
 // --------------------------------------------------
 // 尝试 第   1  次 获取 数据
@@ -112,6 +113,7 @@ require(['config'], function(){
                         });
                            $('.fenlei_b_b').html('');
                            $('.fenlei_b_b').html(html);
+
                     }
 // 尝试 第    2   次 获取 数据
                     else if($idx1 == 1){
@@ -149,14 +151,15 @@ require(['config'], function(){
                            $('.fenlei_b_b').html('');
                            $('.fenlei_b_b').html(html);
                     }
-
+// ...............................
+            
 
         })
    
 // --------------------------------------------------
 $aa2.mouseover(function(){
     $idx2 =  $aa2.index(this);
-    console.log($idx2)
+    // console.log($idx2)
 
 // 尝试 第   1  次 获取 数据
 //
@@ -204,13 +207,14 @@ $aa2.mouseover(function(){
                            $('.affa1').html('');
                            $('.affa1').html(html);
                     }
-
+touMing1();
             })
 
 
 $aa3.mouseover(function(){
+   
     $idx3 =  $aa3.index(this);
-    console.log($idx3)
+    // console.log($idx3)
 
 // 尝试 第   1  次 获取 数据
 //
@@ -258,14 +262,14 @@ $aa3.mouseover(function(){
                            $('.affa2').html('');
                            $('.affa2').html(html);
                     }
-
+touMing2();
             })
 
 
 
 $aa4.mouseover(function(){
     $idx4 =  $aa4.index(this);
-    console.log($idx4)
+    // console.log($idx4)
 
 // 尝试 第   1  次 获取 数据
 //
@@ -313,7 +317,7 @@ $aa4.mouseover(function(){
                            $('.affa3').html('');
                            $('.affa3').html(html);
                     }
-
+touMing3();
             })
 
 
@@ -335,18 +339,81 @@ $aa4.mouseover(function(){
 
 
         function F_FS(val){
-            return  '<div class=" '+ val.id +' fl idxa" style=" width:180px;height:230px; position: relative;">' +
+            return  '<div id="'+ val.id +'" class=" '+ val.id +' fl idxa" style="margin: 0px 2px 0px 0;border-right:1px solid #d0d0d0; border-bottom:1px solid #d0d0d0; width:180px;height:245px; position: relative;">' +
                 '<a class="" href="../html/details.html?gid=' +val.id+'" >'+
-                '<div class="pho_div" style="width:185px;height:179px;">'+ 
+                '<div class="pho_div" style="width:170px;height:179px;">'+ 
                     '<img src="'+ val.photo +'"  class="pho1" style="width: 100%; height: 100%;"/>'
                  +'</div>'+
                 '<div class="data_name" style="font-size: 12px;">'+ val.username +'</div>'+
-                '<div class="data_yuan" style="font-size: 12px; position:absolute;top:205px;color: red; font-size: 16px;text-weight: bold; left:130px;">'+ "￥" +val.price +'</div></a>'
+                '<div class="data_yuan" style="font-size: 12px; position:absolute;top:220px;color: #EF3C79 ; font-size: 16px;font-weight: bold; left:10px;">'+ "￥" +val.price +'</div><span style="position: absolute; top: 224px;left: 60px;font-size: 14px;text-decoration:line-through;">￥1123</span></a>'
             +'</div>'
         }
 
+//   鼠标  移动 到商品 其他商品 半透明
+touMing1();
+function touMing1(){
+  
+    // 获取 节点
+    setTimeout(function(){
+        var F1 = $('.FFF1_box').children('.affa1').children('.idxa');
+        // var F2 = $('.FFF2_box').children('.affa2').children('.idxa');
+        // var F3 = $('.FFF3_box').children('.affa3').children('.idxa');
 
+        F1.mouseover(function(){
+            F1_this = F1.index(this);
+            $(F1[F1_this]).siblings().stop().animate({opacity:'0.4'});
+            // .siblings());
+        })
+        F1.mouseout(function(){
+            F1_this = F1.index(this);
+            $(F1[F1_this]).siblings().stop().animate({opacity:'1'});
+        })
 
+    }, 200)
+};
+
+touMing2();
+function touMing2(){
+   
+    // 获取 节点
+    setTimeout(function(){
+        // var F1 = $('.FFF1_box').children('.affa1').children('.idxa');
+        var F2 = $('.FFF2_box').children('.affa2').children('.idxa');
+        // var F3 = $('.FFF3_box').children('.affa3').children('.idxa');
+
+        F2.mouseover(function(){
+            F2_this = F2.index(this);
+            $(F2[F2_this]).siblings().stop().animate({opacity:'0.4'});
+            // .siblings());
+        })
+        F2.mouseout(function(){
+            F2_this = F2.index(this);
+            $(F2[F2_this]).siblings().stop().animate({opacity:'1'});
+        })
+
+    }, 200)
+};
+touMing3();
+function touMing3(){
+   
+    // 获取 节点
+    setTimeout(function(){
+        // var F1 = $('.FFF1_box').children('.affa1').children('.idxa');
+        // var F2 = $('.FFF2_box').children('.affa2').children('.idxa');
+        var F3 = $('.FFF3_box').children('.affa3').children('.idxa');
+
+        F3.mouseover(function(){
+            F3_this = F3.index(this);
+            $(F3[F3_this]).siblings().stop().animate({opacity:'0.4'});
+            // .siblings());
+        })
+        F3.mouseout(function(){
+            F3_this = F3.index(this);
+            $(F3[F3_this]).siblings().stop().animate({opacity:'1'});
+        })
+
+    }, 200)
+};
 
     })
 })

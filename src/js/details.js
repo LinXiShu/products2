@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-04-11 09:12:12
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-04-13 15:35:54
+* @Last Modified time: 2018-04-14 09:42:19
 */
 
 // var gid = location.search.split('?')[1].split('=')[1];
@@ -23,18 +23,18 @@ require(['config'], function(){
             // console.log(red);
 
            html += xiangqingye(red);
-           console.log(999);
+           // console.log(999);
             $('.one1').html(html);
 
            // lbta += lbt(red);
             // $('.xq_zuo_z').html(lbta);
 
-            console.log(red.photo);
+            // console.log(red.photo);
 
 
             var img_lj = $('.img_cs');
             img_lj.attr('src',red.photo);
-            console.log(img_lj);
+            // console.log(img_lj);
 
 
 
@@ -73,7 +73,7 @@ require(['config'], function(){
        var cont2 =  $('.cont2')
        var cont2_dl = cont2.children('.dw_dl').children('.dw_dl_dc');
 
-       console.log(cont2_dl,988);
+       // console.log(cont2_dl,988);
 // 隐藏
             cont2_dl.hide();
 // 显示
@@ -95,9 +95,10 @@ require(['config'], function(){
             });
 
 
+       // console.log(huiding,987);
 
 
-       console.log(huiding,987);
+
 
     })
 })

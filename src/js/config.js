@@ -13,6 +13,8 @@ require.config({
         'zjf_fdj' : '../js/zjf_fdj',
         'jiarugouwuche' : '../js/jiarugouwuche',
         'shopcar' : '../js/shopcar',
+        'fenYe'  :  '../js/fenye',
+
     },
     shim: {
         'carousel' : ['jquery'],
@@ -22,6 +24,7 @@ require.config({
         'zjf_fdj' : ['jquery'],
         'jiarugouwuche' : ['jquery'],
         'shopcar' : ['jquery'],
+        'fenYe' : ['jquery'],
     }
 
 });

@@ -2,15 +2,15 @@
 * @Author: Marte
 * @Date:   2018-04-09 15:47:42
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-04-13 21:36:09
+* @Last Modified time: 2018-04-14 16:22:07
 */
 
 console.log('这里是列表页， 功能:点击分类 动态生成不同商品 ( 类似于分页 )');
 
 require(['config'], function(){
-    require(['jquery'], function(){
+    require(['jquery','fenYe'], function(){
 
-        
+    
         // 鼠标 移入 定位 动画
                 
                var cont2 =  $('.cont2')
@@ -70,10 +70,6 @@ require(['config'], function(){
 
 // 飞入购物车
 
-function FR(){
-    return '<div style=" position:absolute;z-index:10000;width:600px;height:600px; background:url("'+val.photo +'")no-repeat ">asd</div>'
-}
-
 
 
 
@@ -89,7 +85,16 @@ function FR(){
 
 // 执行 封装好的 ajax 请求函数 以及 生成列表
         pageLoad();
-       
+
+
+// 点击 分类 后 分页 页数 跟新 为 原来 1
+        var span_sz = $('.span_sz');
+        var sz = 1;
+        // console.log(span_sz);
+
+        $('.span_sz').html('');
+        $('.span_sz').html(sz);
+
       }); 
 
           var $li_2 = $('.aaa').children('.li_t');
@@ -115,7 +120,7 @@ function FR(){
                     });
                     $('.you').html('');
                     $('.you').html(html);
-flll();
+                    flll();
                 }
             });
         }
@@ -152,7 +157,7 @@ flll();
     //         console.log(this_div);
 
     //     })
-    
+   
 flll();
 function flll(){
 setTimeout(function(){
@@ -164,7 +169,6 @@ setTimeout(function(){
         
         var jrgwc_tj = jrgwc[jrgwc_idx].id;
 
-        // console.log(jrgwc_tj);
 //  ajax 
         $.ajax({
             url: '../api/details.php',
@@ -174,7 +178,7 @@ setTimeout(function(){
                 // console.log(ress);
 // 加入成功
                 if(ress){
-                   alert('加入成功');
+                  shoppingCartAnimate();
                 }else{
                    alert('加入失败');
 
@@ -185,8 +189,51 @@ setTimeout(function(){
         });
 
 
+////////////////////////////////////////////////
+// 加入购物车 ，动画  在 加入购物车 ajax 成功 后执行，            
+// 运用延时器 延时 ，解决 异步 问题 。                       
+// 知识点：  js 获取的 Node 节点 ，转换成  数组形式            
+// 方便 jq 使用：   good_frgwc  =  $( good_frgwc ) 
+////////////////////////////////////////////////
+
+
+function shoppingCartAnimate(){
+//  飞入购物车 动画
+// 获取 所点击 的 位置 对应的 照片  ----------------------
+        var good_frgwc = jrgwc[jrgwc_idx].parentNode.previousSibling.previousSibling.previousSibling.childNodes[0];
+        good_frgwc = $(good_frgwc);
+
+        // console.log(good_frgwc);
+
+        var good_gwc = $('.dw_gwc');
+        
+    var flyElm = good_frgwc.clone();
+
+    $('body').append(flyElm);
+
+    flyElm.css({
+        'z-index': 9000,
+        'display': 'block',
+        'position': 'absolute',
+        'top': good_frgwc.offset().top +'px',
+        'left': good_frgwc.offset().left +'px',
+        'width': good_frgwc.width() +'px',
+        'height': good_frgwc.height() +'px'
+    });
+    flyElm.animate({
+        top: good_gwc.offset().top + 40,
+        left: good_gwc.offset().left,
+        width: 10,
+        height: 10
+    }, 'slow', function() {
+        flyElm.remove();
+    });
+}
+
+
 
     })
+
 
 },300)
 };

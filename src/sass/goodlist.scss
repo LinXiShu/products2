@@ -33,13 +33,13 @@
 
 .fenlei_t{border: 1px solid #F5D4D5;
         .cont{  height: 38px; 
-                span{display: block; padding:0 20px ;line-height: 38px;}        
+                span{display: block; padding:0 10px ;line-height: 38px;}        
         }
 }
 // 1254px  1222px
 .fenlei{
-    .cont{
-          height: 1600px;
+    .cont{overflow: hidden; margin-bottom: 60px;
+          
         .zuo{ display: block; 
             .zuo_t{display: block;width: 210px;height: 376px; border: 1px solid #ccc; border-top: 2px solid #EF3C79 ; 
                 .zuo_t_t{ height: 34px;line-height: 34px;background: #f0f0f0}
@@ -56,7 +56,7 @@
                 .zuo_b_b{display: block;width:210px;line-height: 40px;border-top: 1px solid #d0d0d0;color: #ccc;}
             }
         }
-        .you{ display: block; width: 975px; height: 1550px;
+        .you{ display: block; width: 975px; min-height: 800px;margin-bottom: 50px;
             margin-top: 10px;margin-left: 5px;
             .gl_box{position: relative; 
                 display: block;width: 232px;height: 377px;
@@ -69,6 +69,22 @@
             } 
         
         }
+        .FY{display:block; overflow: hidden;
+            width: 700px;height: 100px;margin-right: 220px;
+            .cent{display: block; width:230px;height:110px;margin: 0 auto;
+                > .FY_zuo{display: block;
+                    width: 50px; height: 50px;margin-right: 30px;
+                }
+                >   .FY_c{display: block;
+                    width: 50px; height: 50px;line-height:50px;font-size: 20px;
+                }
+                > .FY_you{display: block;
+                    width: 50px; height: 50px;margin-left: 30px;
+                }
+            }
+        }
+
+
     }
 }
  
