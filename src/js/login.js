@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-04-09 10:33:46
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-04-09 13:27:03
+* @Last Modified time: 2018-04-16 16:20:05
 */
 
 console.log(999);
@@ -39,9 +39,9 @@ require(['config'],function(){
                         console.log(9998);
                         location.href = '../index.html';
                     }else if(data == 'fail'){
-                        $error.text('账户或用户不正确');
+                        alert('帐号/ 密码不正确');
                     }else if(data == 'unExist'){
-                        $error.text('账户不存在');
+                        alert('帐号不存在，好吧？你是来搞笑的吗');
                     }
                 }
             })   
