@@ -3,12 +3,13 @@
  * @Author: Marte
  * @Date:   2018-04-09 14:01:47
  * @Last Modified by:   Marte
- * @Last Modified time: 2018-04-09 14:03:02
+ * @Last Modified time: 2018-04-16 16:09:49
  */
     require('connect.php');
     
     $uname = isset($_GET['uname'])?$_GET['uname']:'';
     $pwd = isset($_GET['pwd'])?$_GET['pwd']:'';
+    $Email  = isset($_GET['Email'])?$_GET['Email']:'';
 
 
 
@@ -20,7 +21,7 @@
 
         
         // 写入数据sql语句
-        $sql = "insert into users(username,password) values('$uname','$pwd')";
+        $sql = "insert into users(username,password,Email) values('$uname','$pwd','$Email')";
     
         $res = $conn->query($sql);
     
